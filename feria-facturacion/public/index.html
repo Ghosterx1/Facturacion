@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feria Universitaria · Facturación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🧾 Feria Universitaria · Cuentas claras</h1>
+    <p>Registra ventas con imágenes de productos o recibos y revisa el resumen del evento.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Registrar venta</h2>
+      <form id="form-venta" novalidate>
+        <label>Imágenes del producto o recibo (puedes subir varias)
+          <input type="file" id="imagenes" accept="image/*" multiple>
+        </label>
+        <button type="button" id="btn-ia" class="secundario">✨ Leer imágenes con IA</button>
+        <div id="preview" class="preview"></div>
+
+        <h3>Productos vendidos</h3>
+        <div class="fila encabezado"><span>Producto</span><span>Cantidad</span><span>Precio unitario</span><span></span></div>
+        <div id="items"></div>
+        <button type="button" id="btn-agregar" class="secundario">+ Agregar producto</button>
+
+        <p id="mensaje" class="mensaje" role="alert"></p>
+        <button type="submit">Guardar venta</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Resumen de ventas</h2>
+      <div class="kpis">
+        <div class="kpi"><span id="kpi-total">$0</span><small>Total recaudado</small></div>
+        <div class="kpi"><span id="kpi-trans">0</span><small>Transacciones</small></div>
+      </div>
+      <h3>Productos más vendidos</h3>
+      <div id="top"></div>
+    </section>
+
+    <section class="card ancho">
+      <h2>Historial de transacciones</h2>
+      <div id="historial"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

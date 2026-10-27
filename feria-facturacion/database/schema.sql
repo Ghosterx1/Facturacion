@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS ventas (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  fecha TEXT NOT NULL DEFAULT (datetime('now','localtime'))
+);
+CREATE TABLE IF NOT EXISTS venta_items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  venta_id INTEGER NOT NULL REFERENCES ventas(id) ON DELETE CASCADE,
+  producto TEXT NOT NULL,
+  cantidad INTEGER NOT NULL CHECK (cantidad > 0),
+  precio_unitario REAL NOT NULL CHECK (precio_unitario > 0)
+);
+CREATE TABLE IF NOT EXISTS venta_imagenes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  venta_id INTEGER NOT NULL REFERENCES ventas(id) ON DELETE CASCADE,
+  archivo TEXT NOT NULL
+);

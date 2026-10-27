@@ -1,0 +1,11 @@
+{
+  "name": "feria-facturacion",
+  "version": "1.0.0",
+  "description": "Sistema de facturación simple para ferias universitarias",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^2.0.2"
+  }
+}

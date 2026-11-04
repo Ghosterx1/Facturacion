@@ -1,0 +1,16 @@
+{
+  "name": "feria-facturacion-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auditoría de calidad de Feria Facturación: suite Playwright + cobertura c8",
+  "scripts": {
+    "test": "playwright test",
+    "test:regresion": "playwright test --grep @regresion",
+    "reporte": "playwright show-report reportes/playwright"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "c8": "10.1.3"
+  },
+  "engines": { "node": ">=22.13" }
+}

@@ -1,0 +1,1834 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\playwright.config.js",
+    "rootDir": "C:/Users/marco/Facturacion/feria-facturacion/qa/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\support\\teardown.js",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reportes/playwright",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reportes/resultados.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/marco/Facturacion/feria-facturacion/qa/reportes/artefactos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/marco/Facturacion/feria-facturacion/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 1,
+    "webServer": {
+      "cwd": "C:\\Users\\marco\\Facturacion\\feria-facturacion",
+      "command": "\"C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\node_modules\\.bin\\c8\" --reports-dir qa/reportes/cobertura --reporter=html --reporter=text --reporter=json-summary --include server.js --include \"database/**\" node qa/support/servidor-pruebas.js",
+      "url": "http://localhost:3100/api/resumen",
+      "env": {
+        "PORT": "3100"
+      },
+      "reuseExistingServer": false,
+      "stdout": "pipe",
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 10000
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "01-positivas.spec.js",
+      "file": "01-positivas.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pruebas positivas",
+          "file": "01-positivas.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-01 Registrar una venta con un producto desde la interfaz @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2045,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:46.836Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-1d12d-desde-la-interfaz-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-44cf3d513a85b18e0e21",
+              "file": "01-positivas.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "TC-02 Registrar una venta con varios productos y total correcto @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:48.965Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-edd3f--y-total-correcto-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-7a4ba573b1ec1ab6dfc1",
+              "file": "01-positivas.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "TC-03 Registrar una venta con imagen adjunta",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 494,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:49.592Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-f9e0e-na-venta-con-imagen-adjunta\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-8f0bfd7e0ebf47d995cb",
+              "file": "01-positivas.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "TC-04 El resumen acumula total y transacciones de varias ventas @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:50.093Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-9d352--de-varias-ventas-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-8323b43d5cc50f822db8",
+              "file": "01-positivas.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "TC-05 El top agrupa el mismo producto escrito con distintas mayúsculas @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 326,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:50.425Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-a9000-tintas-mayúsculas-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-96671b59984745e50f60",
+              "file": "01-positivas.spec.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "TC-06 Eliminar una venta con confirmación @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 459,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:50.759Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-70078--con-confirmación-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-a88ad11740d5a4a9486e",
+              "file": "01-positivas.spec.js",
+              "line": 69,
+              "column": 3
+            },
+            {
+              "title": "TC-07 Leer una imagen con IA llena las filas de productos @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 578,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:51.225Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\01-positivas-Pruebas-posit-2d990-ilas-de-productos-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "740d472e9932cfea9720-b39b456c018fc619aeb6",
+              "file": "01-positivas.spec.js",
+              "line": 81,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "02-negativas.spec.js",
+      "file": "02-negativas.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pruebas negativas",
+          "file": "02-negativas.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-08 Guardar sin nombre de producto",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 370,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:51.817Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-5dc61-rdar-sin-nombre-de-producto\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a826832d756227ab547f-0e4b226e8ed4f7c10487",
+              "file": "02-negativas.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "TC-09 Cantidad decimal rechazada en interfaz y API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:52.194Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-d8f49-rechazada-en-interfaz-y-API\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a826832d756227ab547f-73897648e570f472d4d8",
+              "file": "02-negativas.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "TC-10 API rechaza una venta sin productos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:52.555Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-c2960-aza-una-venta-sin-productos\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a826832d756227ab547f-8a68888992b32f117937",
+              "file": "02-negativas.spec.js",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "TC-11 API rechaza items con JSON malformado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 176,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:52.744Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-7ae52-a-items-con-JSON-malformado\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a826832d756227ab547f-15bb210b5c21d828cecc",
+              "file": "02-negativas.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "TC-12 Rechazo de archivo que no es imagen",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 211,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:52.928Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-1f02b-de-archivo-que-no-es-imagen\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a826832d756227ab547f-1f42463a4b36bbb5ed8f",
+              "file": "02-negativas.spec.js",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "TC-13 Archivo HTML con tipo MIME falsificado como imagen",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 219,
+                      "error": {
+                        "message": "Error: El archivo se guardó como /uploads/1793770373207-260370.html y se sirve como text/html; charset=UTF-8\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: El archivo se guardó como /uploads/1793770373207-260370.html y se sirve como text/html; charset=UTF-8\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:62:131",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                          "column": 131,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m evidencia(test\u001b[33m.\u001b[39minfo()\u001b[33m,\u001b[39m \u001b[32m'respuesta'\u001b[39m\u001b[33m,\u001b[39m { creacion\u001b[33m:\u001b[39m r\u001b[33m,\u001b[39m archivo\u001b[33m:\u001b[39m url\u001b[33m,\u001b[39m contentType\u001b[33m:\u001b[39m tipo })\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[90m// Esperado: el servidor rechaza el archivo o, como mínimo, nunca lo sirve como HTML ejecutable.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m \u001b[33m!\u001b[39m\u001b[33mString\u001b[39m(tipo)\u001b[33m.\u001b[39mstartsWith(\u001b[32m'text/html'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`El archivo se guardó como ${url} y se sirve como ${tipo}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m   test(\u001b[32m'TC-14 Nombre de producto enviado como número'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                            "column": 131,
+                            "line": 62
+                          },
+                          "message": "Error: El archivo se guardó como /uploads/1793770373207-260370.html y se sirve como text/html; charset=UTF-8\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m evidencia(test\u001b[33m.\u001b[39minfo()\u001b[33m,\u001b[39m \u001b[32m'respuesta'\u001b[39m\u001b[33m,\u001b[39m { creacion\u001b[33m:\u001b[39m r\u001b[33m,\u001b[39m archivo\u001b[33m:\u001b[39m url\u001b[33m,\u001b[39m contentType\u001b[33m:\u001b[39m tipo })\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[90m// Esperado: el servidor rechaza el archivo o, como mínimo, nunca lo sirve como HTML ejecutable.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m \u001b[33m!\u001b[39m\u001b[33mString\u001b[39m(tipo)\u001b[33m.\u001b[39mstartsWith(\u001b[32m'text/html'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m`El archivo se guardó como ${url} y se sirve como ${tipo}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m   test(\u001b[32m'TC-14 Nombre de producto enviado como número'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:62:131\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:53.145Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "respuesta",
+                          "contentType": "application/json",
+                          "body": "ewogICJjcmVhY2lvbiI6IHsKICAgICJzdGF0dXMiOiAyMDEsCiAgICAiY3VlcnBvIjogewogICAgICAiaWQiOiAxMQogICAgfQogIH0sCiAgImFyY2hpdm8iOiAiL3VwbG9hZHMvMTc5Mzc3MDM3MzIwNy0yNjAzNzAuaHRtbCIsCiAgImNvbnRlbnRUeXBlIjogInRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCIKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-abf28-IME-falsificado-como-imagen\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-abf28-IME-falsificado-como-imagen\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-abf28-IME-falsificado-como-imagen\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-abf28-IME-falsificado-como-imagen\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                        "column": 131,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a826832d756227ab547f-886e124eda26ef7ad25a",
+              "file": "02-negativas.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "TC-14 Nombre de producto enviado como número",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1120,
+                      "error": {
+                        "message": "Error: Respuesta: {\"status\":500,\"cuerpo\":{\"error\":\"No se pudo guardar la venta\"}}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m500\u001b[39m\nReceived array: \u001b[31m[201, 400]\u001b[39m",
+                        "stack": "Error: Respuesta: {\"status\":500,\"cuerpo\":{\"error\":\"No se pudo guardar la venta\"}}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m500\u001b[39m\nReceived array: \u001b[31m[201, 400]\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:69:59",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                          "column": 59,
+                          "line": 69
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 67 |\u001b[39m     \u001b[36mawait\u001b[39m capturaApi(page\u001b[33m,\u001b[39m \u001b[32m'TC-14'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Producto numérico'\u001b[39m\u001b[33m,\u001b[39m [{ paso\u001b[33m:\u001b[39m \u001b[32m'POST /api/ventas items=[{\"producto\":123,...}]'\u001b[39m\u001b[33m,\u001b[39m datos\u001b[33m:\u001b[39m r }])\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[90m// Esperado: guardarlo como \"123\" (201) o rechazarlo con un mensaje de validación (400), nunca un error interno.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m     expect([\u001b[35m201\u001b[39m\u001b[33m,\u001b[39m \u001b[35m400\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Respuesta: ${JSON.stringify(r)}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(r\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'TC-15 Cantidad escrita en notación científica'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                            "column": 59,
+                            "line": 69
+                          },
+                          "message": "Error: Respuesta: {\"status\":500,\"cuerpo\":{\"error\":\"No se pudo guardar la venta\"}}\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m500\u001b[39m\nReceived array: \u001b[31m[201, 400]\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m     \u001b[36mawait\u001b[39m capturaApi(page\u001b[33m,\u001b[39m \u001b[32m'TC-14'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Producto numérico'\u001b[39m\u001b[33m,\u001b[39m [{ paso\u001b[33m:\u001b[39m \u001b[32m'POST /api/ventas items=[{\"producto\":123,...}]'\u001b[39m\u001b[33m,\u001b[39m datos\u001b[33m:\u001b[39m r }])\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[90m// Esperado: guardarlo como \"123\" (201) o rechazarlo con un mensaje de validación (400), nunca un error interno.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m     expect([\u001b[35m201\u001b[39m\u001b[33m,\u001b[39m \u001b[35m400\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Respuesta: ${JSON.stringify(r)}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(r\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'TC-15 Cantidad escrita en notación científica'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:69:59\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:55.142Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-7bfa8-roducto-enviado-como-número\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-7bfa8-roducto-enviado-como-número\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-7bfa8-roducto-enviado-como-número\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-7bfa8-roducto-enviado-como-número\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                        "column": 59,
+                        "line": 69
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a826832d756227ab547f-4b031f0db66dd3255e28",
+              "file": "02-negativas.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "TC-15 Cantidad escrita en notación científica",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1827,
+                      "error": {
+                        "message": "Error: Se guardó una venta de 1000 unidades\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"fecha\": \"2026-11-04 00:32:58\", \"id\": 12, \"imagenes\": [], \"items\": [{\"cantidad\": 1000, \"id\": 15, \"precio_unitario\": 2000, \"producto\": \"Chocolatina\", \"venta_id\": 12}], \"total\": 2000000}]\u001b[39m",
+                        "stack": "Error: Se guardó una venta de 1000 unidades\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"fecha\": \"2026-11-04 00:32:58\", \"id\": 12, \"imagenes\": [], \"items\": [{\"cantidad\": 1000, \"id\": 15, \"precio_unitario\": 2000, \"producto\": \"Chocolatina\", \"venta_id\": 12}], \"total\": 2000000}]\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:81:99",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                          "column": 99,
+                          "line": 81
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 79 |\u001b[39m     \u001b[36mawait\u001b[39m evidencia(test\u001b[33m.\u001b[39minfo()\u001b[33m,\u001b[39m \u001b[32m'ventas'\u001b[39m\u001b[33m,\u001b[39m ventas)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m     \u001b[90m// Esperado: \"1e3\" no es una cantidad entera válida escrita por un vendedor; debe rechazarse.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m     expect(ventas\u001b[33m,\u001b[39m \u001b[32m`Se guardó una venta de ${ventas[0] && ventas[0].items[0].cantidad} unidades`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                            "column": 99,
+                            "line": 81
+                          },
+                          "message": "Error: Se guardó una venta de 1000 unidades\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"fecha\": \"2026-11-04 00:32:58\", \"id\": 12, \"imagenes\": [], \"items\": [{\"cantidad\": 1000, \"id\": 15, \"precio_unitario\": 2000, \"producto\": \"Chocolatina\", \"venta_id\": 12}], \"total\": 2000000}]\u001b[39m\n\n\u001b[0m \u001b[90m 79 |\u001b[39m     \u001b[36mawait\u001b[39m evidencia(test\u001b[33m.\u001b[39minfo()\u001b[33m,\u001b[39m \u001b[32m'ventas'\u001b[39m\u001b[33m,\u001b[39m ventas)\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m     \u001b[90m// Esperado: \"1e3\" no es una cantidad entera válida escrita por un vendedor; debe rechazarse.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m     expect(ventas\u001b[33m,\u001b[39m \u001b[32m`Se guardó una venta de ${ventas[0] && ventas[0].items[0].cantidad} unidades`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js:81:99\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:32:57.382Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "ventas",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJpZCI6IDEyLAogICAgImZlY2hhIjogIjIwMjYtMTEtMDQgMDA6MzI6NTgiLAogICAgIml0ZW1zIjogWwogICAgICB7CiAgICAgICAgImlkIjogMTUsCiAgICAgICAgInZlbnRhX2lkIjogMTIsCiAgICAgICAgInByb2R1Y3RvIjogIkNob2NvbGF0aW5hIiwKICAgICAgICAiY2FudGlkYWQiOiAxMDAwLAogICAgICAgICJwcmVjaW9fdW5pdGFyaW8iOiAyMDAwCiAgICAgIH0KICAgIF0sCiAgICAiaW1hZ2VuZXMiOiBbXSwKICAgICJ0b3RhbCI6IDIwMDAwMDAKICB9Cl0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-3c35d-rita-en-notación-científica\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-3c35d-rita-en-notación-científica\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-3c35d-rita-en-notación-científica\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\02-negativas-Pruebas-negat-3c35d-rita-en-notación-científica\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\02-negativas.spec.js",
+                        "column": 99,
+                        "line": 81
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a826832d756227ab547f-3f78603c2e99c3874953",
+              "file": "02-negativas.spec.js",
+              "line": 72,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-valores-limite.spec.js",
+      "file": "03-valores-limite.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Valores límite",
+          "file": "03-valores-limite.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-16 Cantidad en el límite inferior (0 rechaza, 1 acepta) @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:01.078Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--02063--rechaza-1-acepta-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-f85fcfa5cc83b06e9fe0",
+              "file": "03-valores-limite.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "TC-17 Precio en el límite inferior (0 rechaza, 0,01 acepta)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:02.262Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--adcd8-rior-0-rechaza-0-01-acepta-\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-b00aca7fdf6c99e34e55",
+              "file": "03-valores-limite.spec.js",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "TC-18 Precio por debajo de la precisión de la moneda (0,001)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 933,
+                      "error": {
+                        "message": "Error: Venta guardada con precio 0,001 y el total mostrado es $0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Venta guardada con precio 0,001 y el total mostrado es $0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:37:108",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                          "column": 108,
+                          "line": 37
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m total \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#kpi-total'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[90m// Esperado: si el precio es aceptado como > 0, el total mostrado no puede ser $0.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     expect(\u001b[33m!\u001b[39mguardada \u001b[33m||\u001b[39m total \u001b[33m!==\u001b[39m \u001b[32m'$0'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`Venta guardada con precio 0,001 y el total mostrado es ${total}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   test(\u001b[32m'TC-19 Número de imágenes: 10 acepta, 11 rechaza con mensaje claro'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                            "column": 108,
+                            "line": 37
+                          },
+                          "message": "Error: Venta guardada con precio 0,001 y el total mostrado es $0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m total \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#kpi-total'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[90m// Esperado: si el precio es aceptado como > 0, el total mostrado no puede ser $0.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     expect(\u001b[33m!\u001b[39mguardada \u001b[33m||\u001b[39m total \u001b[33m!==\u001b[39m \u001b[32m'$0'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`Venta guardada con precio 0,001 y el total mostrado es ${total}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   test(\u001b[32m'TC-19 Número de imágenes: 10 acepta, 11 rechaza con mensaje claro'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:37:108\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:02.492Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--f863d-ecisión-de-la-moneda-0-001-\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--f863d-ecisión-de-la-moneda-0-001-\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--f863d-ecisión-de-la-moneda-0-001-\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--f863d-ecisión-de-la-moneda-0-001-\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                        "column": 108,
+                        "line": 37
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-412358a4219455d62382",
+              "file": "03-valores-limite.spec.js",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "TC-19 Número de imágenes: 10 acepta, 11 rechaza con mensaje claro",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1159,
+                      "error": {
+                        "message": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/imágenes|máximo|10/i\u001b[39m\nReceived string:  \u001b[31m\"Unexpected file field\"\u001b[39m",
+                        "stack": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/imágenes|máximo|10/i\u001b[39m\nReceived string:  \u001b[31m\"Unexpected file field\"\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:46:88",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                          "column": 88,
+                          "line": 46
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     expect(diez\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m     expect(once\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(once\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'El mensaje debe estar en español y explicar el límite'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/imágenes|máximo|10/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m   test(\u001b[32m'TC-20 Tamaño de imagen: 8 MB acepta, 8 MB + 1 byte rechaza con mensaje claro'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                            "column": 88,
+                            "line": 46
+                          },
+                          "message": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/imágenes|máximo|10/i\u001b[39m\nReceived string:  \u001b[31m\"Unexpected file field\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     expect(diez\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m     expect(once\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(once\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'El mensaje debe estar en español y explicar el límite'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/imágenes|máximo|10/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m   test(\u001b[32m'TC-20 Tamaño de imagen: 8 MB acepta, 8 MB + 1 byte rechaza con mensaje claro'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:46:88\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:05.256Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--5cfaa-1-rechaza-con-mensaje-claro\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--5cfaa-1-rechaza-con-mensaje-claro\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--5cfaa-1-rechaza-con-mensaje-claro\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--5cfaa-1-rechaza-con-mensaje-claro\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                        "column": 88,
+                        "line": 46
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-fb16be07464c793c69cc",
+              "file": "03-valores-limite.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "TC-20 Tamaño de imagen: 8 MB acepta, 8 MB + 1 byte rechaza con mensaje claro",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1284,
+                      "error": {
+                        "message": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/tamaño|MB|grande|pesad/i\u001b[39m\nReceived string:  \u001b[31m\"File too large\"\u001b[39m",
+                        "stack": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/tamaño|MB|grande|pesad/i\u001b[39m\nReceived string:  \u001b[31m\"File too large\"\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:55:87",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                          "column": 87,
+                          "line": 55
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m     expect(ocho\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m     expect(mas\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     expect(mas\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'El mensaje debe estar en español y explicar el límite'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/tamaño|MB|grande|pesad/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m\n \u001b[90m 58 |\u001b[39m   test(\u001b[32m'TC-21 Precio en el máximo numérico (1e308) no debe dañar el resumen'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                            "column": 87,
+                            "line": 55
+                          },
+                          "message": "Error: El mensaje debe estar en español y explicar el límite\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/tamaño|MB|grande|pesad/i\u001b[39m\nReceived string:  \u001b[31m\"File too large\"\u001b[39m\n\n\u001b[0m \u001b[90m 53 |\u001b[39m     expect(ocho\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m     expect(mas\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m     expect(mas\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'El mensaje debe estar en español y explicar el límite'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/tamaño|MB|grande|pesad/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m\n \u001b[90m 58 |\u001b[39m   test(\u001b[32m'TC-21 Precio en el máximo numérico (1e308) no debe dañar el resumen'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:55:87\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:08.433Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--92f3f-e-rechaza-con-mensaje-claro\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--92f3f-e-rechaza-con-mensaje-claro\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--92f3f-e-rechaza-con-mensaje-claro\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--92f3f-e-rechaza-con-mensaje-claro\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                        "column": 87,
+                        "line": 55
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-e890f3db898c7ed4e58d",
+              "file": "03-valores-limite.spec.js",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "TC-21 Precio en el máximo numérico (1e308) no debe dañar el resumen",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1324,
+                      "error": {
+                        "message": "Error: Venta aceptada (201); resumen.total=null; KPI muestra $0 con 2 transacciones\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Venta aceptada (201); resumen.total=null; KPI muestra $0 con 2 transacciones\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:67:134",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                          "column": 134,
+                          "line": 67
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 65 |\u001b[39m     \u001b[90m// Esperado: rechazar el monto (400) o mantener un total numérico coherente.\u001b[39m\n \u001b[90m 66 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m (\u001b[36mtypeof\u001b[39m resumen\u001b[33m.\u001b[39mtotal \u001b[33m===\u001b[39m \u001b[32m'number'\u001b[39m \u001b[33m&&\u001b[39m kpi \u001b[33m!==\u001b[39m \u001b[32m'$0'\u001b[39m)\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m       \u001b[32m`Venta aceptada (${r.status}); resumen.total=${resumen.total}; KPI muestra ${kpi} con ${resumen.transacciones} transacciones`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m\n \u001b[90m 70 |\u001b[39m   test(\u001b[32m'TC-22 El top muestra máximo 5 productos'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                            "column": 134,
+                            "line": 67
+                          },
+                          "message": "Error: Venta aceptada (201); resumen.total=null; KPI muestra $0 con 2 transacciones\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 65 |\u001b[39m     \u001b[90m// Esperado: rechazar el monto (400) o mantener un total numérico coherente.\u001b[39m\n \u001b[90m 66 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m (\u001b[36mtypeof\u001b[39m resumen\u001b[33m.\u001b[39mtotal \u001b[33m===\u001b[39m \u001b[32m'number'\u001b[39m \u001b[33m&&\u001b[39m kpi \u001b[33m!==\u001b[39m \u001b[32m'$0'\u001b[39m)\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m       \u001b[32m`Venta aceptada (${r.status}); resumen.total=${resumen.total}; KPI muestra ${kpi} con ${resumen.transacciones} transacciones`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m\n \u001b[90m 70 |\u001b[39m   test(\u001b[32m'TC-22 El top muestra máximo 5 productos'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:67:134\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:11.666Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--87cb1-08-no-debe-dañar-el-resumen\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--87cb1-08-no-debe-dañar-el-resumen\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--87cb1-08-no-debe-dañar-el-resumen\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--87cb1-08-no-debe-dañar-el-resumen\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                        "column": 134,
+                        "line": 67
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-b48a6b3d0a13087e7314",
+              "file": "03-valores-limite.spec.js",
+              "line": 58,
+              "column": 3
+            },
+            {
+              "title": "TC-22 El top muestra máximo 5 productos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1224,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:14.872Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--9e4a9--muestra-máximo-5-productos\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-2ccaab088612341906f9",
+              "file": "03-valores-limite.spec.js",
+              "line": 70,
+              "column": 3
+            },
+            {
+              "title": "TC-23 Nombre de producto de 5000 caracteres",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1704,
+                      "error": {
+                        "message": "Error: Guardado (201); la página se desborda 45644px en horizontal\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Guardado (201); la página se desborda 45644px en horizontal\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:87:124",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                          "column": 124,
+                          "line": 87
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 85 |\u001b[39m     \u001b[36mawait\u001b[39m captura(page\u001b[33m,\u001b[39m \u001b[32m'TC-23'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 86 |\u001b[39m     \u001b[90m// Esperado: limitar la longitud del nombre (400) o mostrarlo sin desbordar la página.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 87 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m desborde \u001b[33m<=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`Guardado (${r.status}); la página se desborda ${desborde}px en horizontal`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 88 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 90 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                            "column": 124,
+                            "line": 87
+                          },
+                          "message": "Error: Guardado (201); la página se desborda 45644px en horizontal\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 85 |\u001b[39m     \u001b[36mawait\u001b[39m captura(page\u001b[33m,\u001b[39m \u001b[32m'TC-23'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 86 |\u001b[39m     \u001b[90m// Esperado: limitar la longitud del nombre (400) o mostrarlo sin desbordar la página.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 87 |\u001b[39m     expect(r\u001b[33m.\u001b[39mstatus \u001b[33m===\u001b[39m \u001b[35m400\u001b[39m \u001b[33m||\u001b[39m desborde \u001b[33m<=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`Guardado (${r.status}); la página se desborda ${desborde}px en horizontal`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 88 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 90 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js:87:124\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:16.187Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--bfdf8-producto-de-5000-caracteres\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--bfdf8-producto-de-5000-caracteres\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--bfdf8-producto-de-5000-caracteres\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\03-valores-limite-Valores--bfdf8-producto-de-5000-caracteres\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\03-valores-limite.spec.js",
+                        "column": 124,
+                        "line": 87
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfd53ad6318e57545e87-c862271e047e53858267",
+              "file": "03-valores-limite.spec.js",
+              "line": 80,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "04-tablas-decision.spec.js",
+      "file": "04-tablas-decision.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Tablas de decisión",
+          "file": "04-tablas-decision.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-24 Validación de una fila: producto × cantidad × precio @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1160,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:19.804Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--fbf12-cantidad-×-precio-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbed0d5cac8ba886e8fe-d2ece74b2075a80a5c57",
+              "file": "04-tablas-decision.spec.js",
+              "line": 7,
+              "column": 3
+            },
+            {
+              "title": "TC-25 Lectura con IA: clave × imagen × formato × respuesta",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 616,
+                      "error": {
+                        "message": "Error: R5: el usuario recibe el mensaje técnico en inglés de la API externa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/clave|manual/i\u001b[39m\nReceived string:  \u001b[31m\"invalid x-api-key\"\u001b[39m",
+                        "stack": "Error: R5: el usuario recibe el mensaje técnico en inglés de la API externa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/clave|manual/i\u001b[39m\nReceived string:  \u001b[31m\"invalid x-api-key\"\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js:60:101",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                          "column": 101,
+                          "line": 60
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m     expect(r4)\u001b[33m.\u001b[39mtoEqual({ status\u001b[33m:\u001b[39m \u001b[35m500\u001b[39m\u001b[33m,\u001b[39m cuerpo\u001b[33m:\u001b[39m { error\u001b[33m:\u001b[39m \u001b[32m'No se pudo interpretar la imagen. Ingresa los datos manualmente.'\u001b[39m } })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m     expect(r6\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m501\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     expect(r5\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'R5: el usuario recibe el mensaje técnico en inglés de la API externa'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/clave|manual/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'TC-26 Agrupación del top: mayúsculas ASCII y letras acentuadas'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                            "column": 101,
+                            "line": 60
+                          },
+                          "message": "Error: R5: el usuario recibe el mensaje técnico en inglés de la API externa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/clave|manual/i\u001b[39m\nReceived string:  \u001b[31m\"invalid x-api-key\"\u001b[39m\n\n\u001b[0m \u001b[90m 58 |\u001b[39m     expect(r4)\u001b[33m.\u001b[39mtoEqual({ status\u001b[33m:\u001b[39m \u001b[35m500\u001b[39m\u001b[33m,\u001b[39m cuerpo\u001b[33m:\u001b[39m { error\u001b[33m:\u001b[39m \u001b[32m'No se pudo interpretar la imagen. Ingresa los datos manualmente.'\u001b[39m } })\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m     expect(r6\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m501\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     expect(r5\u001b[33m.\u001b[39mcuerpo\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'R5: el usuario recibe el mensaje técnico en inglés de la API externa'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/clave|manual/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'TC-26 Agrupación del top: mayúsculas ASCII y letras acentuadas'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js:60:101\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:21.062Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--c67d0-magen-×-formato-×-respuesta\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--c67d0-magen-×-formato-×-respuesta\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--c67d0-magen-×-formato-×-respuesta\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--c67d0-magen-×-formato-×-respuesta\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                        "column": 101,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbed0d5cac8ba886e8fe-343017f9191c24c7462f",
+              "file": "04-tablas-decision.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "TC-26 Agrupación del top: mayúsculas ASCII y letras acentuadas",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1245,
+                      "error": {
+                        "message": "Error: \"Café\", \"café\" y \"CAFÉ\" deben contar como un solo producto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"Café: 2 u\", \"CAFÉ: 1 u\"]\u001b[39m",
+                        "stack": "Error: \"Café\", \"café\" y \"CAFÉ\" deben contar como un solo producto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"Café: 2 u\", \"CAFÉ: 1 u\"]\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js:73:89",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                          "column": 89,
+                          "line": 73
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 71 |\u001b[39m     \u001b[36mawait\u001b[39m capturaApi(page\u001b[33m,\u001b[39m \u001b[32m'TC-26'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Tabla de decisión de agrupación del top'\u001b[39m\u001b[33m,\u001b[39m [{ paso\u001b[33m:\u001b[39m \u001b[32m'Resultado por grupo'\u001b[39m\u001b[33m,\u001b[39m datos\u001b[33m:\u001b[39m reglas }])\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect(reglas[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtop)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     expect(reglas[\u001b[35m1\u001b[39m]\u001b[33m.\u001b[39mtop\u001b[33m,\u001b[39m \u001b[32m'\"Café\", \"café\" y \"CAFÉ\" deben contar como un solo producto'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                            "column": 89,
+                            "line": 73
+                          },
+                          "message": "Error: \"Café\", \"café\" y \"CAFÉ\" deben contar como un solo producto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[\"Café: 2 u\", \"CAFÉ: 1 u\"]\u001b[39m\n\n\u001b[0m \u001b[90m 71 |\u001b[39m     \u001b[36mawait\u001b[39m capturaApi(page\u001b[33m,\u001b[39m \u001b[32m'TC-26'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Tabla de decisión de agrupación del top'\u001b[39m\u001b[33m,\u001b[39m [{ paso\u001b[33m:\u001b[39m \u001b[32m'Resultado por grupo'\u001b[39m\u001b[33m,\u001b[39m datos\u001b[33m:\u001b[39m reglas }])\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m     expect(reglas[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtop)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     expect(reglas[\u001b[35m1\u001b[39m]\u001b[33m.\u001b[39mtop\u001b[33m,\u001b[39m \u001b[32m'\"Café\", \"café\" y \"CAFÉ\" deben contar como un solo producto'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 75 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js:73:89\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:23.496Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--6ca0f-s-ASCII-y-letras-acentuadas\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--6ca0f-s-ASCII-y-letras-acentuadas\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--6ca0f-s-ASCII-y-letras-acentuadas\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\04-tablas-decision-Tablas--6ca0f-s-ASCII-y-letras-acentuadas\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\04-tablas-decision.spec.js",
+                        "column": 89,
+                        "line": 73
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbed0d5cac8ba886e8fe-80873a83ec62c1e2fcc5",
+              "file": "04-tablas-decision.spec.js",
+              "line": 63,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-transicion-estados.spec.js",
+      "file": "05-transicion-estados.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Transición de estados",
+          "file": "05-transicion-estados.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-27 Estados del formulario: filas, guardado y reinicio @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1607,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:26.676Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-d08f4-ardado-y-reinicio-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b132e3749fb6c0b1dbc1-063a9ab6087aa6caf69e",
+              "file": "05-transicion-estados.spec.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "TC-28 Ciclo de vida de una venta: inexistente → registrada → eliminada",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 332,
+                      "error": {
+                        "message": "Error: Eliminar una venta que ya no existe debe responder 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: Eliminar una venta que ya no existe debe responder 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\05-transicion-estados.spec.js:42:81",
+                        "location": {
+                          "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\05-transicion-estados.spec.js",
+                          "column": 81,
+                          "line": 42
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 40 |\u001b[39m     expect(del1\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     expect(lista2)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(cuerpo\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m     expect(r2\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Eliminar una venta que ya no existe debe responder 404'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 43 |\u001b[39m     expect([\u001b[35m400\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m])\u001b[33m.\u001b[39mtoContain(r3\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\05-transicion-estados.spec.js",
+                            "column": 81,
+                            "line": 42
+                          },
+                          "message": "Error: Eliminar una venta que ya no existe debe responder 404\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[0m \u001b[90m 40 |\u001b[39m     expect(del1\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     expect(lista2)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(cuerpo\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m     expect(r2\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m \u001b[32m'Eliminar una venta que ya no existe debe responder 404'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 43 |\u001b[39m     expect([\u001b[35m400\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m])\u001b[33m.\u001b[39mtoContain(r3\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\05-transicion-estados.spec.js:42:81\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:28.370Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-6ff1c-te-→-registrada-→-eliminada\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-6ff1c-te-→-registrada-→-eliminada\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-6ff1c-te-→-registrada-→-eliminada\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-6ff1c-te-→-registrada-→-eliminada\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\tests\\05-transicion-estados.spec.js",
+                        "column": 81,
+                        "line": 42
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b132e3749fb6c0b1dbc1-2a4dec69768254d4a926",
+              "file": "05-transicion-estados.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "TC-29 Estados del botón de IA: habilitado → leyendo → habilitado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3498,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:30.574Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-eebb5-tado-→-leyendo-→-habilitado\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b132e3749fb6c0b1dbc1-2d9c49608c340f8dd6fa",
+              "file": "05-transicion-estados.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "TC-30 Estado de un campo: inválido → corregido → venta guardada @regresion",
+              "ok": true,
+              "tags": [
+                "regresion"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 620,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-04T05:33:34.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\marco\\Facturacion\\feria-facturacion\\qa\\reportes\\artefactos\\05-transicion-estados-Tran-fdd44--→-venta-guardada-regresion\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b132e3749fb6c0b1dbc1-02e4789661eaed781e7d",
+              "file": "05-transicion-estados.spec.js",
+              "line": 66,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T05:32:45.106Z",
+    "duration": 51324.234,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}

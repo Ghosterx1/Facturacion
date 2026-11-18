@@ -1,0 +1,226 @@
+
+> feria-facturacion-pruebas@1.0.0 test
+> jest
+
+FAIL ./06-defectos.test.js (17.005 s)
+  ● Defectos encontrados (pruebas fallidas) › BUG-01 No debería aceptar una página HTML disfrazada de imagen
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Object {
+    -   "status": 400,
+    -   "tipoServido": null,
+    +   "status": 201,
+    +   "tipoServido": "text/html; charset=UTF-8",
+      }
+
+      68 |
+      69 |     // Esperado: rechazo (400). Obtenido: se guarda y se sirve como página web (text/html)
+    > 70 |     expect({ status: r.status, tipoServido }).toEqual({ status: 400, tipoServido: null })
+         |                                               ^
+      71 |   })
+      72 |
+      73 |   // Severidad: ALTA · Prioridad: ALTA
+
+      at Object.toEqual (pruebas/06-defectos.test.js:70:47)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-02 Registrar dos veces seguidas el botón Guardar no debería duplicar la venta
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 1
+    Received length: 2
+    Received array:  [{"fecha": "2026-11-17 20:14:09", "id": 2, "imagenes": [], "items": [{"cantidad": 1, "id": 2, "precio_unitario": 3500, "producto": "Brownie", "venta_id": 2}], "total": 3500}, {"fecha": "2026-11-17 20:14:09", "id": 1, "imagenes": [], "items": [{"cantidad": 1, "id": 1, "precio_unitario": 3500, "producto": "Brownie", "venta_id": 1}], "total": 3500}]
+
+      80 |     const ventas = await llamarAPI(page, '/api/ventas')
+      81 |
+    > 82 |     expect(ventas.cuerpo).toHaveLength(1)
+         |                           ^
+      83 |   })
+      84 |
+      85 |   // Severidad: MEDIA · Prioridad: ALTA
+
+      at Object.toHaveLength (pruebas/06-defectos.test.js:82:27)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-03 Un nombre de producto numérico no debería producir un error interno (500)
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 500
+    Received array: [201, 400]
+
+      88 |
+      89 |     // Esperado: 201 (guardar "123") o 400 (rechazar). Obtenido: 500 "No se pudo guardar la venta"
+    > 90 |     expect([201, 400]).toContain(r.status)
+         |                        ^
+      91 |   })
+      92 |
+      93 |   // Severidad: MEDIA · Prioridad: MEDIA
+
+      at Object.toContain (pruebas/06-defectos.test.js:90:24)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-04 Un precio enorme no debería dañar el total del resumen
+
+    expect(received).not.toBeNull()
+
+    Received: null
+
+       99 |
+      100 |     // Esperado: rechazar el precio o mostrar un total válido. Obtenido: total null y KPI "$0" con 1 venta
+    > 101 |     expect(resumen.cuerpo.total).not.toBeNull()
+          |                                      ^
+      102 |   })
+      103 |
+      104 |   // Severidad: MEDIA · Prioridad: MEDIA
+
+      at Object.toBeNull (pruebas/06-defectos.test.js:101:38)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-05 El error de la IA debería mostrarse en español y explicar qué hacer
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /clave|manual/i
+    Received string:  "invalid x-api-key"
+
+      110 |
+      111 |     // Esperado: un mensaje como "La clave de la IA no es válida...". Obtenido: "invalid x-api-key"
+    > 112 |     expect(await leerMensaje(page)).toMatch(/clave|manual/i)
+          |                                     ^
+      113 |   })
+      114 |
+      115 |   // Severidad: BAJA · Prioridad: MEDIA
+
+      at Object.toMatch (pruebas/06-defectos.test.js:112:37)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-06 Subir más de 10 imágenes debería explicar el límite en español
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /imágenes|máximo|10/i
+    Received string:  "Unexpected file field"
+
+      119 |
+      120 |     // Esperado: "Máximo 10 imágenes por venta". Obtenido: "Unexpected file field"
+    > 121 |     expect(r.cuerpo.error).toMatch(/imágenes|máximo|10/i)
+          |                            ^
+      122 |   })
+      123 |
+      124 |   // Severidad: BAJA · Prioridad: MEDIA
+
+      at Object.toMatch (pruebas/06-defectos.test.js:121:28)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-07 Una imagen de más de 8 MB debería explicar el límite en español
+
+    expect(received).toMatch(expected)
+
+    Expected pattern: /tamaño|MB|grande/i
+    Received string:  "File too large"
+
+      128 |
+      129 |     // Esperado: "La imagen supera el tamaño máximo de 8 MB". Obtenido: "File too large"
+    > 130 |     expect(r.cuerpo.error).toMatch(/tamaño|MB|grande/i)
+          |                            ^
+      131 |   })
+      132 |
+      133 |   // Severidad: BAJA · Prioridad: BAJA
+
+      at Object.toMatch (pruebas/06-defectos.test.js:130:28)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-08 El resumen debería agrupar "Café" y "CAFÉ" como el mismo producto
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 1
+    Received length: 2
+    Received array:  [{"producto": "CAFÉ", "recaudado": 2000, "unidades": 1}, {"producto": "Café", "recaudado": 2000, "unidades": 1}]
+
+      138 |
+      139 |     // SQLite solo pasa a minúsculas las letras sin tilde: "CAFÉ" queda como "cafÉ"
+    > 140 |     expect(resumen.cuerpo.top).toHaveLength(1)
+          |                                ^
+      141 |   })
+      142 |
+      143 |   // Severidad: BAJA · Prioridad: BAJA
+
+      at Object.toHaveLength (pruebas/06-defectos.test.js:140:32)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-09 Un precio menor a un centavo no debería mostrar un total de $0
+
+    expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "$0"
+
+      149 |
+      150 |     // Esperado: rechazar precios menores a 0,01 o mostrarlos. Obtenido: venta guardada y total "$0"
+    > 151 |     expect(total).not.toBe('$0')
+          |                       ^
+      152 |   })
+      153 |
+      154 |   // Severidad: BAJA · Prioridad: BAJA
+
+      at Object.toBe (pruebas/06-defectos.test.js:151:23)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-10 Un nombre de producto muy largo no debería desbordar la página
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 0
+    Received:    4285
+
+      159 |
+      160 |     // Esperado: el nombre se corta o se ajusta. Obtenido: la página se desplaza en horizontal
+    > 161 |     expect(desborde).toBeLessThanOrEqual(0)
+          |                      ^
+      162 |   })
+      163 |
+      164 |   // Severidad: BAJA · Prioridad: BAJA
+
+      at Object.toBeLessThanOrEqual (pruebas/06-defectos.test.js:161:22)
+
+  ● Defectos encontrados (pruebas fallidas) › BUG-11 Eliminar una venta que no existe debería responder 404
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 404
+    Received: 200
+
+      167 |
+      168 |     // Esperado: 404 "Venta no encontrada". Obtenido: 200 {"ok": true}
+    > 169 |     expect(r.status).toBe(404)
+          |                      ^
+      170 |   })
+      171 | })
+      172 |
+
+      at Object.toBe (pruebas/06-defectos.test.js:169:22)
+
+PASS ./02-validaciones.test.js (24.344 s)
+PASS ./04-lectura-ia.test.js (13.587 s)
+PASS ./03-historial-estados.test.js (12.529 s)
+PASS ./01-registro-ventas.test.js (9.71 s)
+PASS ./05-dispositivos.test.js (6.436 s)
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |   97.14 |    88.33 |     100 |   97.14 |                   
+ feria-facturacion          |   98.71 |    89.83 |     100 |   98.71 |                   
+  server.js                 |   98.71 |    89.83 |     100 |   98.71 | 10-11             
+ feria-facturacion/database |   84.21 |        0 |     100 |   84.21 |                   
+  db.js                     |   84.21 |        0 |     100 |   84.21 | 12-14             
+----------------------------|---------|----------|---------|---------|-------------------
+
+=============================== Coverage summary ===============================
+Statements   : 97.14% ( 170/175 )
+Branches     : 88.33% ( 53/60 )
+Functions    : 100% ( 5/5 )
+Lines        : 97.14% ( 170/175 )
+================================================================================
+
+Test Suites: 1 failed, 5 passed, 6 total
+Tests:       11 failed, 44 passed, 55 total
+Snapshots:   0 total
+Time:        83.809 s, estimated 85 s
+Ran all test suites.

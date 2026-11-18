@@ -1,0 +1,15 @@
+{
+  "name": "feria-facturacion-pruebas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pruebas automáticas de Feria Facturación con Jest + Puppeteer y cobertura de código",
+  "scripts": {
+    "test": "jest",
+    "test:ver": "jest",
+    "test:aprobadas": "jest --testPathIgnorePatterns 06-defectos --coverageThreshold={}"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "puppeteer": "24.43.1"
+  }
+}

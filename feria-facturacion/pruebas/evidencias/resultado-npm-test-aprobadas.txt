@@ -1,0 +1,31 @@
+
+> feria-facturacion-pruebas@1.0.0 test:aprobadas
+> jest --testPathIgnorePatterns 06-defectos --coverageThreshold={}
+
+PASS ./02-validaciones.test.js (24.587 s)
+PASS ./04-lectura-ia.test.js (13.509 s)
+PASS ./03-historial-estados.test.js (12.906 s)
+PASS ./01-registro-ventas.test.js (9.626 s)
+PASS ./05-dispositivos.test.js (6.622 s)
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |   94.85 |    84.74 |     100 |   94.85 |                   
+ feria-facturacion          |   96.15 |     86.2 |     100 |   96.15 |                   
+  server.js                 |   96.15 |     86.2 |     100 |   96.15 | 10-11,70-73       
+ feria-facturacion/database |   84.21 |        0 |     100 |   84.21 |                   
+  db.js                     |   84.21 |        0 |     100 |   84.21 | 12-14             
+----------------------------|---------|----------|---------|---------|-------------------
+
+=============================== Coverage summary ===============================
+Statements   : 94.85% ( 166/175 )
+Branches     : 84.74% ( 50/59 )
+Functions    : 100% ( 5/5 )
+Lines        : 94.85% ( 166/175 )
+================================================================================
+
+Test Suites: 5 passed, 5 total
+Tests:       44 passed, 44 total
+Snapshots:   0 total
+Time:        67.475 s
+Ran all test suites.
